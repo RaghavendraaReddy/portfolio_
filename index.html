@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raghavendra Reddy | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 3D Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursor-trail"></div>
+
+  <!-- Nav -->
+  <nav id="navbar">
+    <div class="nav-logo">RR<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:sraghavendra5564@gmail.com" class="nav-cta">Hire Me</a>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-title">
+        <span class="line">Raghavendra</span>
+        <span class="line gradient-text">Reddy</span>
+      </h1>
+      <p class="hero-role">
+        <span class="role-prefix">I build</span>
+        <span class="role-cycle" id="role-cycle">Backend Systems</span>
+      </p>
+      <p class="hero-desc">
+        Software Engineer specializing in Node.js, Laravel & Vue.js.<br />
+        I turn complex backend problems into clean, scalable solutions.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">2+</span>
+          <span class="stat-label">Years Exp</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Tech Stacks</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="code-card">
+        <div class="code-card-header">
+          <span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span>
+          <span class="code-file">engineer.js</span>
+        </div>
+        <pre class="code-body"><code><span class="c-kw">const</span> <span class="c-var">ragha</span> = {
+  <span class="c-key">role</span>: <span class="c-str">"Software Engineer"</span>,
+  <span class="c-key">exp</span>: <span class="c-str">"2+ years"</span>,
+  <span class="c-key">stack</span>: [
+    <span class="c-str">"Node.js"</span>, <span class="c-str">"Laravel"</span>,
+    <span class="c-str">"Vue.js"</span>, <span class="c-str">"MySQL"</span>
+  ],
+  <span class="c-key">passion</span>: <span class="c-str">"Observability"</span>,
+  <span class="c-key">status</span>: <span class="c-str">"open_to_work"</span> <span class="c-cm">✓</span>
+};</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="section-label">/ about me</div>
+    <div class="about-grid">
+      <div class="about-left">
+        <h2 class="section-title">Crafting backends<br/><span class="gradient-text">that scale.</span></h2>
+        <p class="about-text">
+          I'm a Software Engineer with a strong focus on backend architecture,
+          performance optimization, and cloud infrastructure. Currently at <strong>Alt DRX</strong>,
+          I led the migration of an entire backend system from Laravel to Node.js —
+          improving performance, scalability, and maintainability.
+        </p>
+        <p class="about-text">
+          I'm passionate about observability, distributed systems, and writing code
+          that's not just functional — but elegant and maintainable at scale.
+        </p>
+        <div class="about-links">
+          <a href="https://github.com/RaghavendraaReddy" target="_blank" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/raghavendraareddy" target="_blank" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-date">Feb 2024 – Present</span>
+              <h4>Software Engineer</h4>
+              <p>Alt DRX</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-date">Dec 2022 – Jun 2023</span>
+              <h4>Front-End Developer Intern</h4>
+              <p>AiRender Technology Pvt Ltd</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-date">Sep 2021 – Jul 2023</span>
+              <h4>Master of Computer Applications</h4>
+              <p>Manipal Institute of Technology</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="section-label">/ skills</div>
+    <h2 class="section-title">Tech <span class="gradient-text">Arsenal</span></h2>
+    <p class="section-sub">Technologies I use to build powerful systems</p>
+    <div class="skills-grid">
+
+      <div class="skill-card" data-delay="0">
+        <div class="skill-icon">
+          <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" fill="#339933" opacity="0.15"/><text x="16" y="21" text-anchor="middle" fill="#339933" font-size="14" font-weight="bold">N</text></svg>
+        </div>
+        <h4>Node.js</h4>
+        <p>Backend APIs & server-side logic</p>
+        <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+      </div>
+
+      <div class="skill-card" data-delay="50">
+        <div class="skill-icon">
+          <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" fill="#FF2D20" opacity="0.15"/><text x="16" y="21" text-anchor="middle" fill="#FF2D20" font-size="11" font-weight="bold">L</text></svg>
+        </div>
+        <h4>Laravel</h4>
+        <p>PHP framework for robust backends</p>
+        <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+      </div>
+
+      <div class="skill-card" data-delay="100">
+        <div class="skill-icon">
+          <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" fill="#42b883" opacity="0.15"/><text x="16" y="21" text-anchor="middle" fill="#42b883" font-size="11" font-weight="bold">V</text></svg>
+        </div>
+        <h4>Vue.js</h4>
+        <p>Reactive UIs & admin dashboards</p>
+        <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+      </div>
+
+      <div class="skill-card" data-delay="150">
+        <div class="skill-icon">
+          <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" fill="#3178c6" opacity="0.15"/><text x="16" y="21" text-anchor="middle" fill="#3178c6" font-size="11" font-weight="bold">TS</text></svg>
+        </div>
+        <h4>TypeScript</h4>
+        <p>Type-safe JavaScript development</p>
+        <div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div>
+      </div>
+
+      <div class="skill-card" data-delay="200">
+        <div class="skill-icon">
+          <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" fill="#4479A1" opacity="0.15"/><text x="16" y="21" text-anchor="middle" fill="#4479A1" font-size="9" font-weight="bold">SQL</text></svg>
+        </div>
+        <h4>MySQL</h4>
+        <p>Relational DB design & ORM</p>
+        <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+      </div>
+
+      <div class="skill-card" data-delay="250">
+        <div class="skill-icon">
+          <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" fill="#47A248" opacity="0.15"/><text x="16" y="21" text-anchor="middle" fill="#47A248" font-size="9" font-weight="bold">MDB</text></svg>
+        </div>
+        <h4>MongoDB</h4>
+        <p>NoSQL document database</p>
+        <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+      </div>
+
+      <div class="skill-card" data-delay="300">
+        <div class="skill-icon">
+          <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" fill="#61DAFB" opacity="0.15"/><text x="16" y="21" text-anchor="middle" fill="#61DAFB" font-size="9" font-weight="bold">RJS</text></svg>
+        </div>
+        <h4>React.js</h4>
+        <p>Component-driven frontends</p>
+        <div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div>
+      </div>
+
+      <div class="skill-card" data-delay="350">
+        <div class="skill-icon">
+          <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" fill="#e535ab" opacity="0.15"/><text x="16" y="21" text-anchor="middle" fill="#e535ab" font-size="9" font-weight="bold">API</text></svg>
+        </div>
+        <h4>RESTful APIs</h4>
+        <p>Scalable API design & integration</p>
+        <div class="skill-bar"><div class="skill-fill" style="--w:92%"></div></div>
+      </div>
+
+      <div class="skill-card" data-delay="400">
+        <div class="skill-icon">
+          <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" fill="#2496ED" opacity="0.15"/><text x="16" y="21" text-anchor="middle" fill="#2496ED" font-size="9" font-weight="bold">DKR</text></svg>
+        </div>
+        <h4>Docker</h4>
+        <p>Containerization & deployment</p>
+        <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+      </div>
+
+      <div class="skill-card" data-delay="450">
+        <div class="skill-icon">
+          <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" fill="#F05032" opacity="0.15"/><text x="16" y="21" text-anchor="middle" fill="#F05032" font-size="9" font-weight="bold">GIT</text></svg>
+        </div>
+        <h4>Git / GitHub</h4>
+        <p>Version control & collaboration</p>
+        <div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div>
+      </div>
+
+      <div class="skill-card" data-delay="500">
+        <div class="skill-icon">
+          <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" fill="#a855f7" opacity="0.15"/><text x="16" y="21" text-anchor="middle" fill="#a855f7" font-size="9" font-weight="bold">OBS</text></svg>
+        </div>
+        <h4>Observability</h4>
+        <p>Monitoring, logging & stack design</p>
+        <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+      </div>
+
+      <div class="skill-card" data-delay="550">
+        <div class="skill-icon">
+          <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" fill="#3776AB" opacity="0.15"/><text x="16" y="21" text-anchor="middle" fill="#3776AB" font-size="9" font-weight="bold">PY</text></svg>
+        </div>
+        <h4>Python</h4>
+        <p>Scripting & automation</p>
+        <div class="skill-bar"><div class="skill-fill" style="--w:72%"></div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="section-label">/ projects</div>
+    <h2 class="section-title">Things I've <span class="gradient-text">Built</span></h2>
+    <p class="section-sub">A selection of my work</p>
+
+    <div class="projects-grid">
+
+      <div class="project-card featured">
+        <div class="project-glow"></div>
+        <div class="project-top">
+          <div class="project-tag">Featured</div>
+          <div class="project-links">
+            <a href="https://github.com/rahul5564/p-deploy" target="_blank" class="project-link-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3 class="project-title">Icarus — E-Commerce Platform</h3>
+        <p class="project-desc">
+          Full-featured e-commerce application with product listing, smart sorting & filtering,
+          cart & wishlist management, order tracking, and complete auth flow (signup, signin, signout).
+        </p>
+        <ul class="project-highlights">
+          <li>Product catalog with multi-criteria filtering</li>
+          <li>Cart & wishlist with persistent state</li>
+          <li>Complete authentication system</li>
+        </ul>
+        <div class="project-stack">
+          <span>React JS</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-glow"></div>
+        <div class="project-top">
+          <div class="project-tag">Backend</div>
+          <div class="project-links">
+            <a href="#" class="project-link-btn" title="Postman Docs">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M13.527.099C6.955-.744.942 3.9.099 10.473c-.843 6.572 3.8 12.584 10.373 13.428 6.573.843 12.587-3.801 13.428-10.374C24.744 6.955 20.101.943 13.527.099zm2.471 7.485a.855.855 0 0 0-.593.25l-4.453 4.453-.307-.307-.643-.643c4.389-4.376 5.18-4.418 5.996-3.753zm-7.73 6.064l-.407-.406 4.453-4.453a.303.303 0 0 1 .386.012l.307.307-4.739 4.54zm-.558.513l4.724-4.732.346.347-5.07 5.069zm6.18-4.714l1.597 1.597-1.597-1.597zM4.682 16.875l.547-.547.547.547-.547.547zm14.636-3.627l-1.597-1.597 1.597-1.597 1.597 1.597z"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3 class="project-title">TripGo — Travel API</h3>
+        <p class="project-desc">
+          RESTful backend API for travel destination management. Supports full CRUD operations
+          — add, retrieve, update, and delete travel destination information with clean API design.
+        </p>
+        <ul class="project-highlights">
+          <li>Full CRUD REST API endpoints</li>
+          <li>Clean, documented API structure</li>
+          <li>Express.js middleware architecture</li>
+        </ul>
+        <div class="project-stack">
+          <span>Node.js</span>
+          <span>Express.js</span>
+          <span>REST API</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="section-label">/ contact</div>
+    <div class="contact-inner">
+      <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+      <p class="contact-sub">
+        I'm open to full-time roles, freelance projects, and interesting collaborations.
+        My inbox is always open.
+      </p>
+      <div class="contact-cards">
+        <a href="mailto:sraghavendra5564@gmail.com" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">Email</p>
+            <p class="contact-value">sraghavendra5564@gmail.com</p>
+          </div>
+        </a>
+        <a href="tel:+917842183181" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.35 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.94-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">Phone</p>
+            <p class="contact-value">+91 7842183181</p>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/raghavendraareddy" target="_blank" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">LinkedIn</p>
+            <p class="contact-value">raghavendraareddy</p>
+          </div>
+        </a>
+        <a href="https://github.com/RaghavendraaReddy" target="_blank" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">GitHub</p>
+            <p class="contact-value">RaghavendraaReddy</p>
+          </div>
+        </a>
+      </div>
+      <a href="mailto:sraghavendra5564@gmail.com" class="btn-primary btn-large">Send a Message</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Designed & Built by <span class="gradient-text">Raghavendra Reddy</span> &copy; 2025</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
